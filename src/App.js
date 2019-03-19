@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+//bootstrap
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+//components
+import Add from './components/add-box/Add';
+import List from './components/tasks-list/List';
+import Completed from './components/completed/Completed';
+import Deleted from './components/deleted/Deleted';
+
+const App = () => (
+  <>
+    <Add />
+    <List />
+    <Completed />
+    <Deleted />
+  </>
+)
 
 export default App;

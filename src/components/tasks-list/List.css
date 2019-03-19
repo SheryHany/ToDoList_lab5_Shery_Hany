@@ -1,0 +1,16 @@
+.mycard{
+    width: 22rem !important;
+    height: 15rem;
+    border: 1px solid silver;
+}
+.mycardBody{
+    width: 40rem !important;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.checkBox{
+    margin-top: 7px;
+    margin-left: 17px;
+}
